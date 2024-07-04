@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  background-color: #f9f5f6;
+  color: #444;
+}
+
+.card-wrapper {
+  width: 400px;
+
+  margin: 100px auto;
+  overflow: hidden;
+  background-color: #f9f5f6;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 5px 5px 10px 5px #c7bec0, -5px -5px 10px 5px #ffffff;
+}
+.card-image {
+  width: 400px;
+  height: 500x;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+.card-image img {
+  width: 398px;
+  height: 500px;
+  overflow: hidden;
+  border: 1.3px solid black;
+  border-radius: 10px;
+}
+
+.card-image img:hover {
+  filter: grayscale(1);
+  /* transform: scale(1.1); */
+}
+#imdb-rating {
+  position: absolute;
+  bottom: 5.5px;
+  left: 0.5;
+  background-color: crimson;
+  color: white;
+  border-radius: 0 10px 0 10px;
+  padding: 4px 20px;
+  font-size: 1.2rem;
+}
+#rotten-rating {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 5.5px;
+  right: 0.5px;
+  background-color: goldenrod;
+  padding: 5px 20px;
+  border-radius: 10px 0 10px 0;
+}
+
+.card-details h1 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card-details span {
+  color: indianred;
+}
+.card-details p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin: 7px;
+}
+.card-details p:nth-child(2) {
+  color: orangered;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-top: 0.4px;
+  text-align: center;
+}
+
+.card-details a {
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 0;
+  letter-spacing: 3px;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  margin: 5px;
+  transition: 0.3s;
+}
+.card-details a:hover {
+  background-color: rgb(171, 16, 47);
+  color: white;
+  letter-spacing: 8px;
+}
+
+.card-details a:active {
+  background-color: rgb(227, 51, 86);
+}
+.fa-youtube {
+  margin-right: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .relative {
+        width: 100%;
+        height: 50vh;
+        background-color: crimson;
+        position: relative;
+        z-index: 0;
+      }
+      .absoulte-1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(017, 214, 213);
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: -2;
+      }
+      .absoulte-2 {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        z-index: -3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      <div class="absoulte-1"></div>
+      <div class="absoulte-2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  color: #222831;
+}
+.card-wrapper {
+  width: 400px;
+  height: 670px;
+  margin: 100px auto;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 5px rgb(134, 118, 118),
+    -5px -5px 10px 5px rgb(255, 255, 255);
+}
+.card-image {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+.card-image img {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border: 1.3px solid black;
+  border-radius: 10px;
+  transition: filter 0.7s ease;
+}
+.card-image img:hover {
+  filter: grayscale(1);
+}
+
+#imdb-rating {
+  position: absolute;
+  bottom: 1px;
+  border-radius: 0px 10px;
+  background-color: crimson;
+  color: white;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#rotten-rating {
+  position: absolute;
+  bottom: 1px;
+  font-size: 1.2rem;
+  background-color: indianred;
+  color: white;
+  right: 0;
+  padding: 10px 15px;
+  border-radius: 10px 0;
+  font-weight: 600;
+}
+
+.card-details h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card-details {
+  font-size: 1.1rem;
+  margin: 4px;
+}
+.card-details p:nth-child(2) {
+  color: #00adb5;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: justify;
+  margin-top: 0.3px;
+}
+.card-details a {
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 0;
+  display: block;
+  text-align: center;
+  margin: 5px;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  transition: letter-spacing 0.4s;
+}
+.card-details a:hover {
+  letter-spacing: 8px;
+  background-color: rgba(220, 20, 60, 0.875);
+  color: white;
+}
+.card-details a:active {
+  background-color: rgb(223, 64, 6);
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Exo", sans-serif;
+  background-color: #f9f5f6;
+  color: #444;
+}
+
+.card-wrapper {
+  width: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+  background-color: #f9f5f6;
+  border-radius: 10px;
+  padding: 15px;
+  /* box-shadow: 5px 5px 10px 5px #c7bec0, -5px -5px 10px 5px #ffffff; */
+  box-shadow: 5px 5px 10px 3px #c7bec0, -5px -5px 10px 5px #ffffff;
+}
+
+.card-image {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-image img {
+  height: 500x;
+  width: 405px;
+}
+
+.card-image:hover img {
+  /* filter: grayscale(1); */
+  transform: scale(1.1);
+  /* filter: invert(1); */
+}
+
+#imdb-rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: crimson;
+  color: white;
+  border-radius: 0 0 10px 0;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+#rotten-rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: goldenrod;
+  padding: 5px 10px;
+  border-radius: 0 0 0 10px;
+  font-weight: 700;
+}
+.card-details p:nth-child(2) {
+  color: orangered;
+  font-weight: 600;
+}
+.card-details h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card-details p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 10px;
+}
+.card-details a {
+  text-decoration: none;
+  color: white;
+  background-color: crimson;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  padding: 3px 0;
+  margin-bottom: 20px;
+  transition: letter-spacing 0.3s;
+}
+
+.card-details a:hover {
+  background-color: rgba(220, 20, 60, 0.9);
+  color: white;
+  letter-spacing: 8px;
+}
+.card-details a:active {
+  background-color: rgba(220, 20, 60, 0.6);
+  color: white;
+}
+
+.fa-youtube {
+  margin-right: 10px;
+}

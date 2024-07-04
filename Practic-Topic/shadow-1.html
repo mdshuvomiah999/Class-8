@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaddow-1</title>
+  </head>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+    .box-1 {
+      height: 200px;
+      width: 200px;
+      background-color: white;
+      margin: 100px auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.1);
+    }
+    .box-2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      background-color: rgb(0, 174, 214);
+      margin: auto;
+      box-shadow: inset -5px -5px 20px rgb(4, 140, 171),
+        inset 5px 5px 20px rgb(11, 207, 251);
+    }
+    .box-3 {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      background-color: rgb(017, 174, 214);
+      margin: 100px auto;
+      box-shadow: 5px 5px 20px rgba(0, 175, 214, 0.905),
+        -5px -5px 20px rgb(7, 195, 237);
+    }
+  </style>
+  <body>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: rgb(0, 4, 53);
+}
+.barkground-design {
+  /* border: 1px solid black; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.barkground-design > .shape {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  filter: blur(150px);
+}
+.shape1 {
+  background-color: #3aa6b9;
+  left: 40%;
+}
+.shape2 {
+  background-color: #ffd0d0;
+  left: 10px;
+  top: 10px;
+  border-radius: 100%;
+}
+.shape3 {
+  background-color: #ff9eaa;
+  bottom: 0px;
+  border-radius: 50%;
+}
+.shape4 {
+  background-color: #f9f9e0;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 100%;
+}
+.shape5 {
+  background-color: #ffe2e2;
+  right: 0px;
+  top: 0px;
+  border-radius: 100%;
+}
+.card-container {
+  margin: 100px auto;
+  /* background-color: white; */
+  max-width: 400px;
+  min-height: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #c3cece, -5px -5px 10px #ffffff;
+  padding: 25px;
+}
+.card-image {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+  overflow: hidden;
+  margin: 20px auto 0;
+  border-radius: 50%;
+}
+.card-image img {
+  cursor: pointer;
+}
+.card-image img:hover {
+  filter: grayscale(0.5);
+}
+.card-details {
+  text-align: center;
+}
+
+.card-details h1 {
+  font-weight: 600;
+}
+.card-details p {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-align: 2px 0px;
+}
+.card-details .designation {
+  text-align: center;
+  font-weight: 500;
+  color: indianred;
+  letter-spacing: 2.2px;
+  margin-top: 1.3px;
+  margin-bottom: 4px;
+}
+
+.card-details a {
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  padding: 6px 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  transition: letter-spacing 0.4s;
+}
+.card-details a:hover {
+  letter-spacing: 5px;
+}
+.card-details a:active {
+  background-color: rgba(220, 20, 60, 0.816);
+}
